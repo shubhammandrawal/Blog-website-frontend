@@ -1,0 +1,154 @@
+.containerFeatured{
+    margin-top: 3rem;
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+.wrapperFeatured{
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.wrapperFeatured h3{
+    margin-bottom: 1.5rem;
+    font-size: 36px;
+    color: #222;
+    font-weight: bold;
+}
+
+.blogs{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.leftFeatured{
+    flex: 2;
+    width: 1000px;
+    height: 100%;
+}
+
+.leftFeatured .mainBlog{
+    height: 100%;
+    position: relative;
+}
+
+.leftFeatured .mainBlog img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    position: relative;
+}
+
+.leftFeatured .mainBlog .mainblogdata{
+    position: absolute;
+    bottom: 2.5rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.leftFeatured .mainBlog .mainblogdata h4{
+    font-size: 32px;
+    margin-bottom: 0.75rem;
+}
+
+
+.categoryandmetadata{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.categoryFeatured{
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 0.25rem 1.25rem;
+}
+
+.metadata{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.blogdescription{
+    font-size: 18px;
+    color: #e2dede;
+    margin-bottom: 1rem;
+}
+
+.author{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftFeatured .mainBlog .mainblogdata .author span span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* right */
+
+.rightFeatured{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.rightFeatured .secondaryblog{
+    height: 50%;
+    width: 100%;
+    position: relative;
+    color: #000;
+}
+
+.rightFeatured .secondaryblog .secondaryBlogData{
+    position: absolute;
+    bottom: 0.5rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+
+.rightFeatured .secondaryblog .secondaryBlogData .description{
+    max-width: 250px;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 1.25rem 0;
+}
+
+.rightFeatured .secondaryblog img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+    position: relative;
+}
+
+
+@media  (max-width: 780px){
+    .containerFeatured{
+        width: 780px;
+    }
+
+    .wrapperFeatured .blogs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftFeatured{
+        width: 100%;
+    }
+}
