@@ -56,7 +56,7 @@ export default function Create() {
 
       const options = {
         'content-type': 'application/json',
-        'bearer': `Authorization ${token}`
+        'Authorization': `Bearer ${token}`
       }
 
       const body = {
@@ -67,7 +67,7 @@ export default function Create() {
       }
 
       const data = await request('/blog', 'POST', options, body)
-      console.log(data)
+      navigate(`/blogDetails/${data._id}`)
     } catch (error) {
       console.log(error)
     }

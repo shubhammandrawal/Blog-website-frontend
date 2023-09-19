@@ -1,0 +1,138 @@
+.category-container{
+    min-height: 1200px;
+    width: 100%;
+}
+
+.category-wrapper{
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-wrapper h2{
+    font-size: 28px;
+    margin: 3rem 0;
+}
+
+.categoriesandblogs{
+   display: flex;
+   flex-direction: column; 
+}
+
+.categories{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.Category{
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 0.25rem 1.25rem;
+    border: 1px solid #222;
+    text-transform: capitalize;
+}
+
+.Category.active{
+    background-color: #222;
+    color: #fff;
+}
+
+.category-blogs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* align-items: center; */
+        gap: 5rem;
+}
+
+.category-blogs .blog{
+    width: 550px;
+    height: 330px;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.category-blogs .blog a img{
+    width: 100%;
+    height: 100%;
+}
+
+.categorymetadata{
+    margin-top: 1rem;
+    display: flex;
+    align-self: center;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.blog .Category{
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 0.25rem 1.5rem;
+    border: 1px solid #222;
+    text-transform: capitalize;
+}
+
+.metadata{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+
+.category-blogs .blog .blogdata{
+    color: #000;
+    padding: 0 1rem;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+} 
+
+.category-blogs .blog .blogdata h4{
+    font-size: 32px;
+    margin-bottom: 0.75rem;
+}
+
+.blogDesc{
+    font-size: 18px;
+    color: #444;
+    line-height: 29px;
+    letter-spacing: 0.75px;
+    margin: 1.25rem 0;
+}
+
+
+.authorandcreatedat{
+    display: flex;
+    justify-content: space-between;
+    color: #444;
+}
+
+.authorandcreatedat span span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.readmore{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    transition: 150ms all ease;
+    cursor: pointer;
+}
+
+.noBlogs{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+}
